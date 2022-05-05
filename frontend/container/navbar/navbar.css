@@ -1,0 +1,24 @@
+.navbar {
+  background: var(--dark);
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: space-around;
+  align-items: center;
+}
+
+.navbar__link {
+  color: var(--text-light);
+  text-decoration: none;
+  justify-self: center;
+  align-self: center;
+  padding: 14px 16px;
+}
+
+.navbar__link:hover {
+  background-color: var(--highlight-color);
+  color: var(--text-dark);
+}
