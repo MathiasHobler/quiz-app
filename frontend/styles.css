@@ -1,0 +1,50 @@
+@import "./container/navbar/navbar.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --dark: #3d278c;
+  --medium: #8670d7;
+  --light: #e0dff2;
+  --text-light: #e0dff2;
+  --text-dark: #0e1826;
+  --highlight-color: #aea0e4;
+}
+.main {
+  background-color: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.quiz-app {
+  color: var(--text-light);
+}
+
+.quiz-app__link {
+  color: var(--text-light);
+  text-decoration: none;
+  justify-self: center;
+  align-self: center;
+  padding: 14px 16px;
+}
+
+.quiz-app__link:hover {
+  color: var(--text-dark);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --dark: green;
+    --medium: #8670d7;
+    --light: #e0dff2;
+    --text-light: #e0dff2;
+    --text-dark: #0e1826;
+    --highlight-color: #aea0e4;
+  }
+}
