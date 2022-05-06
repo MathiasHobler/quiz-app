@@ -22,6 +22,9 @@
   height: 100vh;
   width: 100vw;
 }
+.main_padding {
+  padding: 2em;
+}
 
 .quiz-app {
   color: var(--text-light);

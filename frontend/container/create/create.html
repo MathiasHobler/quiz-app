@@ -11,7 +11,17 @@
     <header class="header">
       <h1 class="header__title">Create</h1>
     </header>
-    <main>create</main>
+    <main class="main_padding">
+      <form class="create">
+        <label for="addQuestion">Add Question:</label>
+        <input type="text" id="addQuestion" name="addQuestion" />
+        <label for="addAnswer">Add Answer:</label><br />
+        <input type="text" id="addAnswer" name="addAnswer" />
+        <label for="addTags">Add Tags, comma seperated:</label>
+        <input type="text" id="addTags" name="addTags" value="Doe" />
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
     <footer>
       <nav class="navbar">
         <a class="navbar__link" href="../home/home.html">home</a>
