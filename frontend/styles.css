@@ -1,5 +1,6 @@
 @import "./container/navbar/navbar.css";
 @import "./container/header.css";
+@import "./container/home/home.css";
 
 * {
   box-sizing: border-box;
