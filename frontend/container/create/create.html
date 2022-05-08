@@ -12,15 +12,33 @@
       <h1 class="header__title">Create</h1>
     </header>
     <main class="main_padding">
-      <form class="create">
-        <label for="addQuestion">Add Question:</label>
-        <input type="text" id="addQuestion" name="addQuestion" />
-        <label for="addAnswer">Add Answer:</label><br />
-        <input type="text" id="addAnswer" name="addAnswer" />
-        <label for="addTags">Add Tags, comma seperated:</label>
-        <input type="text" id="addTags" name="addTags" value="Doe" />
-        <input type="submit" value="Submit" />
-      </form>
+      <section class="create">
+        <div class="create__addQuestion">
+          <label for="addQuestion">Add Question:</label>
+          <input type="text" id="addQuestion" name="addQuestion" />
+        </div>
+        <!-- <label class="create__addQuestion" for="addQuestion"
+          >Add Question:</label
+        >
+        <input
+          class="create__addQuestion"
+          type="text"
+          id="addQuestion"
+          name="addQuestion"
+        /> -->
+        <div class="create__addAnswer">
+          <label for="addAnswer">Add Answer:</label>
+          <input type="text" id="addAnswer" name="addAnswer" />
+        </div>
+        <div class="create__addTags">
+          <label for="addTags">Add Tags, comma seperated:</label>
+          <input type="text" id="addTags" name="addTags" value="Doe" />
+        </div>
+
+        <button class="create__submit" type="submit">
+          <span>Submit</span>
+        </button>
+      </section>
     </main>
     <footer>
       <nav class="navbar">

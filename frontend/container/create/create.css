@@ -1,0 +1,27 @@
+.create {
+  margin: 3em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 2fr 2fr 2fr;
+  align-items: center;
+}
+
+.create__addQuestion {
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.create__addAnswer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.create__addTags {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.create__submit {
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
