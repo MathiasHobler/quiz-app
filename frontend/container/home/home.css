@@ -1,8 +1,8 @@
 .question-card {
   background-color: var(--text-light);
   border-radius: 18px;
-  padding: 15px;
-  max-width: 500px;
+  padding: 1em;
+  max-width: 20em;
   height: 25rem;
   margin: 1em auto;
   position: relative;
@@ -13,6 +13,7 @@
 .question-card__title {
   color: var(--dark);
   grid-row: 1;
+  margin: 1em;
 }
 
 .question-card__text {
@@ -37,13 +38,12 @@
   background-color: var(--dark);
   color: var(--text-light);
   border: none;
-  padding: 25px 25px;
+  margin: 0.5em 1em;
   border-radius: 18px;
   font: inherit;
   cursor: pointer;
   outline: inherit;
   grid-row: 3;
-  grid-column: span;
 }
 
 .question-card__btn:hover {
@@ -62,4 +62,6 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  align-self: center;
+  justify-self: center;
 }
