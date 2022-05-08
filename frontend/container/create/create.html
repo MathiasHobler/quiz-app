@@ -11,7 +11,35 @@
     <header class="header">
       <h1 class="header__title">Create</h1>
     </header>
-    <main>create</main>
+    <main class="main_padding">
+      <section class="create">
+        <div class="create__addQuestion">
+          <label for="addQuestion">Add Question:</label>
+          <input type="text" id="addQuestion" name="addQuestion" />
+        </div>
+        <!-- <label class="create__addQuestion" for="addQuestion"
+          >Add Question:</label
+        >
+        <input
+          class="create__addQuestion"
+          type="text"
+          id="addQuestion"
+          name="addQuestion"
+        /> -->
+        <div class="create__addAnswer">
+          <label for="addAnswer">Add Answer:</label>
+          <input type="text" id="addAnswer" name="addAnswer" />
+        </div>
+        <div class="create__addTags">
+          <label for="addTags">Add Tags, comma seperated:</label>
+          <input type="text" id="addTags" name="addTags" value="Doe" />
+        </div>
+
+        <button class="create__submit" type="submit">
+          <span>Submit</span>
+        </button>
+      </section>
+    </main>
     <footer>
       <nav class="navbar">
         <a class="navbar__link" href="../home/home.html">home</a>
