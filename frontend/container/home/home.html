@@ -20,17 +20,19 @@
           height="48"
           width="48"
         >
+          <!-- <path fill="currentColor"></path> -->
           <path
+            fill="currentColor"
             d="M13 37.45 24 32.8 35 37.45V8.75Q35 8.75 35 8.75Q35 8.75 35 8.75H13Q13 8.75 13 8.75Q13 8.75 13 8.75ZM10 42V8.75Q10 7.55 10.9 6.65Q11.8 5.75 13 5.75H35Q36.2 5.75 37.1 6.65Q38 7.55 38 8.75V42L24 36ZM35 8.75H24H13Q13 8.75 13 8.75Q13 8.75 13 8.75H35Q35 8.75 35 8.75Q35 8.75 35 8.75Z"
           />
         </svg>
         <p class="question-card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum
-          numquam tenetur perspiciatis temporibus, error libero aut commodi eos,
-          est illo, ratione quisquam totam vero!
+          Wie viele Buchstaben hat das hawaiianische Alphabet?
         </p>
-        <button class="question-card__btn">Show Answer</button>
-        <p class="question-card__answer"></p>
+        <button class="question-card__btn" data-js="button-showHide">
+          Show Answer
+        </button>
+        <p class="question-card__answer hide">12</p>
         <article class="question-card__tags-container">
           <h4 class="question-card__tags">#eins</h4>
           <h4 class="question-card__tags">#zwei</h4>
@@ -131,4 +133,20 @@
       </nav>
     </footer>
   </body>
+  <script>
+    const showHideButton = document.querySelector(
+      '[data-js="button-showHide"]'
+    );
+    const answer = document.querySelector(".question-card__answer");
+
+    showHideButton.addEventListener("click", () => {
+      if (showHideButton.innerHTML === "Show Answer") {
+        showHideButton.innerHTML = "Hide Answer";
+        answer.classList.remove("hide");
+      } else {
+        showHideButton.innerHTML = "Show Answer";
+        answer.classList.add("hide");
+      }
+    });
+  </script>
 </html>

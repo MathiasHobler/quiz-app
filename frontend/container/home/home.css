@@ -1,3 +1,9 @@
+/* :root {
+  --svg-mail-envelope: path(
+    "M13 37.45 24 32.8 35 37.45V8.75Q35 8.75 35 8.75Q35 8.75 35 8.75H13Q13 8.75 13 8.75Q13 8.75 13 8.75ZM10 42V8.75Q10 7.55 10.9 6.65Q11.8 5.75 13 5.75H35Q36.2 5.75 37.1 6.65Q38 7.55 38 8.75V42L24 36ZM35 8.75H24H13Q13 8.75 13 8.75Q13 8.75 13 8.75H35Q35 8.75 35 8.75Q35 8.75 35 8.75Z"
+  );
+} */
+
 .question-card {
   background-color: var(--text-light);
   border-radius: 18px;
@@ -21,11 +27,15 @@
   padding: 1em;
 }
 
-.question-card__anser {
+.question-card__answer {
   grid-row: 4;
   padding: 1em;
   align-self: center;
-  margin-top: 1em;
+  margin: 1em auto;
+}
+
+.hide {
+  display: none;
 }
 
 .question-card__bookmark {
@@ -33,6 +43,10 @@
   top: -15px;
   right: 15px;
 }
+
+/* .question-card__bookmark path {
+  d: var(bookmarkFilled);
+} */
 
 .question-card__btn {
   background-color: var(--dark);
