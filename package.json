@@ -40,7 +40,6 @@
   "lint-staged": {
     "*": "prettier --check",
     "*.htmnl": "htmlhibnt",
-    // "*.js": "eslint --debug",
     "*.css": "stylelint"
   }
 }
