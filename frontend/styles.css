@@ -3,7 +3,6 @@
 @import "./container/home/home.css";
 @import "./container/create/create.css";
 
-
 * {
   box-sizing: border-box;
   margin: 0;

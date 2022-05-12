@@ -1,12 +1,17 @@
-const showHideButton = document.querySelector('[data-js="button-showHide"]');
-const answer = document.querySelector(".question-card__answer");
+const questions = document.querySelectorAll(".question-card");
 
-showHideButton.addEventListener("click", () => {
-  if (showHideButton.innerHTML === "Show Answer") {
-    showHideButton.innerHTML = "Hide Answer";
-    answer.classList.remove("hide");
-  } else {
-    showHideButton.innerHTML = "Show Answer";
-    answer.classList.add("hide");
-  }
+questions.forEach((question) => {
+  const button = question.querySelector("button");
+  const answer = question.querySelector(".question-card__answer");
+  console.log(button.textContent);
+  console.log(answer);
+  button.addEventListener("click", () => {
+    if (button.textContent === "Show Answer") {
+      button.textContent = "Hide Answer";
+      answer.classList.remove("hide");
+    } else {
+      button.textContent = "Show Answer";
+      answer.classList.add("hide");
+    }
+  });
 });

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../styles.css" />
+    <script src="home.js" defer></script>
     <title>Quiz App</title>
   </head>
   <body>
@@ -54,12 +55,12 @@
           />
         </svg>
         <p class="question-card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum
-          numquam tenetur perspiciatis temporibus, error libero aut commodi eos,
-          est illo, ratione quisquam totam vero!
+          Einige Monate haben 30, einige 31 Tage. Wie viele haben 28 Tage?
         </p>
         <button class="question-card__btn">Show Answer</button>
-        <p class="question-card__answer"></p>
+        <p class="question-card__answer hide">
+          Alle – jeder Monat hat mindestens 28 Tage.
+        </p>
         <article class="question-card__tags-container">
           <h4 class="question-card__tags">#eins</h4>
           <h4 class="question-card__tags">#zwei</h4>
@@ -81,12 +82,11 @@
           />
         </svg>
         <p class="question-card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum
-          numquam tenetur perspiciatis temporibus, error libero aut commodi eos,
-          est illo, ratione quisquam totam vero!
+          Was antwortet in allen Sprachen? Was spricht ohne Mund? Was hört ohne
+          Ohren?
         </p>
         <button class="question-card__btn">Show Answer</button>
-        <p class="question-card__answer"></p>
+        <p class="question-card__answer hide">Das Echo.</p>
         <article class="question-card__tags-container">
           <h4 class="question-card__tags">#eins</h4>
           <h4 class="question-card__tags">#zwei</h4>
@@ -108,12 +108,10 @@
           />
         </svg>
         <p class="question-card__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum
-          numquam tenetur perspiciatis temporibus, error libero aut commodi eos,
-          est illo, ratione quisquam totam vero!
+          Wie nennt man die Steigerung von Buchstabensuppe?
         </p>
         <button class="question-card__btn">Show Answer</button>
-        <p class="question-card__answer"></p>
+        <p class="question-card__answer hide">Wörter-See.</p>
         <article class="question-card__tags-container">
           <h4 class="question-card__tags">#eins</h4>
           <h4 class="question-card__tags">#zwei</h4>
@@ -133,20 +131,4 @@
       </nav>
     </footer>
   </body>
-  <script>
-    const showHideButton = document.querySelector(
-      '[data-js="button-showHide"]'
-    );
-    const answer = document.querySelector(".question-card__answer");
-
-    showHideButton.addEventListener("click", () => {
-      if (showHideButton.innerHTML === "Show Answer") {
-        showHideButton.innerHTML = "Hide Answer";
-        answer.classList.remove("hide");
-      } else {
-        showHideButton.innerHTML = "Show Answer";
-        answer.classList.add("hide");
-      }
-    });
-  </script>
 </html>
