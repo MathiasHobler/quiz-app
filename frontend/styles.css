@@ -1,8 +1,7 @@
-@import "./container/navbar/navbar.css";
-@import "./container/header.css";
-@import "./container/home/home.css";
-@import "./container/create/create.css";
-
+@import './container/navbar/navbar.css';
+@import './container/header.css';
+@import './container/home/home.css';
+@import './container/create/create.css';
 
 * {
   box-sizing: border-box;
@@ -17,6 +16,7 @@
   --text-dark: #0e1826;
   --highlight-color: #aea0e4;
 }
+
 .main {
   background-color: var(--dark);
   display: flex;

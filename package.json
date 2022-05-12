@@ -1,15 +1,22 @@
 {
   "dependencies": {
-    "gulp": "^4.0.2",
+    "gulp": "^3.9.1",
     "gulp-less": "^5.0.0",
-    "gulp-sass": "^5.1.0"
+    "gulp-sass": "^5.1.0",
+    "lint-staged": "^12.4.1",
+    "prettier": "^2.6.2"
   },
   "name": "quiz-app",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prettier:check": "npx prettier --check .",
+    "prettier:write": "npx prettier --write .",
+    "htmlhint": "npx htmlhint \"**/*.html\"",
+    "stylelint": "npx stylelint \"**/*.css\"",
+    "eslint": "npx eslint \"**/*.js\"",
+    "test": "npm run prettier:write && npm run htmlhint && npm run eslint",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -21,5 +28,19 @@
     "url": "https://github.com/MathiasHobler/quiz-app/issues"
   },
   "homepage": "https://github.com/MathiasHobler/quiz-app#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "htmlhint": "^1.1.4",
+    "husky": "^8.0.1",
+    "stylelint": "^14.8.2",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0"
+  },
+  "lint-staged": {
+    "*": "prettier --check",
+    "*.htmnl": "htmlhibnt",
+    // "*.js": "eslint --debug",
+    "*.css": "stylelint"
+  }
 }
