@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-less": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "lint-staged": "^12.4.1",
