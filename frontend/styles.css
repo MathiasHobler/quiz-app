@@ -1,7 +1,11 @@
 @import "./container/navbar/navbar.css";
-@import "./container/header.css";
-@import "./container/home/home.css";
+@import "./container/header/header.css";
+@import "./container/question/question.css";
 @import "./container/create/create.css";
+@import "./container/quiz-app/quiz-app.css";
+@import "./container/bookmarks/bookmarks.css";
+@import "./container/home/home.css";
+@import "./container/profile/profile.css";
 
 * {
   box-sizing: border-box;
@@ -15,34 +19,6 @@
   --text-light: #e0dff2;
   --text-dark: #0e1826;
   --highlight-color: #aea0e4;
-}
-.main {
-  background-color: var(--dark);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  padding: 1em;
-}
-.main_padding {
-  padding: 2em;
-}
-
-.quiz-app {
-  color: var(--text-light);
-}
-
-.quiz-app__link {
-  color: var(--text-light);
-  text-decoration: none;
-  justify-self: center;
-  align-self: center;
-  padding: 14px 16px;
-}
-
-.quiz-app__link:hover {
-  color: var(--text-dark);
 }
 
 @media (prefers-color-scheme: light) {

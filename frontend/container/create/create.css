@@ -6,6 +6,10 @@
   align-items: center;
 }
 
+.create--hide {
+  display: none;
+}
+
 .create__addQuestion {
   grid-row-start: 1;
   grid-row-end: 2;

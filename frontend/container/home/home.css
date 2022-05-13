@@ -1,4 +1,11 @@
-.question-card {
+.home {
+}
+
+.home--hide {
+  display: none;
+}
+
+/* .question-card {
   background-color: var(--text-light);
   border-radius: 18px;
   padding: 1em;
@@ -75,4 +82,4 @@
   padding: 0;
   align-self: center;
   justify-self: center;
-}
+} */
