@@ -6,8 +6,11 @@
   bottom: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  _justify-items: space-around;
   align-items: center;
+}
+
+.navbar--hide {
+  display: none;
 }
 
 .navbar__link {
