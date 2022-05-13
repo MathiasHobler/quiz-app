@@ -229,24 +229,23 @@
       <section class="create create--hide">
         <div class="create__addQuestion">
           <label for="addQuestion">Add Question:</label>
-          <input type="text" id="addQuestion" name="addQuestion" />
+          <input
+            type="text"
+            id="addQuestion"
+            name="addQuestion"
+            data-js="count"
+          />
+          <p class="log-value"></p>
         </div>
-        <!-- <label class="create__addQuestion" for="addQuestion"
-          >Add Question:</label
-        >
-        <input
-          class="create__addQuestion"
-          type="text"
-          id="addQuestion"
-          name="addQuestion"
-        /> -->
         <div class="create__addAnswer">
           <label for="addAnswer">Add Answer:</label>
-          <input type="text" id="addAnswer" name="addAnswer" />
+          <input type="text" id="addAnswer" name="addAnswer" data-js="count" />
+          <p class="log-value"></p>
         </div>
         <div class="create__addTags">
           <label for="addTags">Add Tags, comma seperated:</label>
-          <input type="text" id="addTags" name="addTags" value="Doe" />
+          <input type="text" id="addTags" name="addTags" data-js="count" />
+          <p class="log-value"></p>
         </div>
 
         <button class="create__submit" type="submit">

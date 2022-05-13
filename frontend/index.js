@@ -18,3 +18,14 @@ bookmarks.forEach(toggleBookmark);
 //navbar---------------------------------------------------------------------------------------------------------------------------------
 const navbar = document.querySelectorAll(".navbar__link");
 switchSides(navbar);
+
+//count values of input fields --------------------------------------------------------------
+const inputs = document.querySelectorAll("input");
+const logs = document.querySelectorAll(".log-value");
+
+inputs.forEach(function (value, index) {
+  value.addEventListener("input", () => {
+    var x = value.textLength;
+    logs[index].innerHTML = x;
+  });
+});
