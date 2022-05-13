@@ -9,9 +9,9 @@
   padding: 1em;
 }
 
-.quiz-app--hide {
+/* .quiz-app--hide {
   display: none;
-}
+} */
 
 .quiz-app__link {
   color: var(--text-light);
