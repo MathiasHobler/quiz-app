@@ -45,6 +45,7 @@ document.querySelector(".navbar__home").addEventListener("click", () => {
   document.querySelector(".bookmarked").classList.add("bookmarked--hide");
   document.querySelector(".create").classList.add("create--hide");
   document.querySelector(".profile").classList.add("profile--hide");
+  document.querySelector(".header__title").textContent = "Quiz App";
 });
 
 document.querySelector(".navbar__bookmarked").addEventListener("click", () => {
@@ -52,6 +53,7 @@ document.querySelector(".navbar__bookmarked").addEventListener("click", () => {
   document.querySelector(".bookmarked").classList.remove("bookmarked--hide");
   document.querySelector(".create").classList.add("create--hide");
   document.querySelector(".profile").classList.add("profile--hide");
+  document.querySelector(".header__title").textContent = "Bookmarked";
 });
 
 document.querySelector(".navbar__create").addEventListener("click", () => {
@@ -59,6 +61,7 @@ document.querySelector(".navbar__create").addEventListener("click", () => {
   document.querySelector(".bookmarked").classList.add("bookmarked--hide");
   document.querySelector(".create").classList.remove("create--hide");
   document.querySelector(".profile").classList.add("profile--hide");
+  document.querySelector(".header__title").textContent = "Create";
 });
 
 document.querySelector(".navbar__profile").addEventListener("click", () => {
@@ -66,4 +69,5 @@ document.querySelector(".navbar__profile").addEventListener("click", () => {
   document.querySelector(".bookmarked").classList.add("bookmarked--hide");
   document.querySelector(".create").classList.add("create--hide");
   document.querySelector(".profile").classList.remove("profile--hide");
+  document.querySelector(".header__title").textContent = "Profile";
 });
