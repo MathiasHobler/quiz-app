@@ -17,7 +17,7 @@ questions.forEach((question) => {
   const answer = question.querySelector(".question-card__answer");
 
   button.addEventListener("click", () => {
-    if (button.textContent === "Show Answer") {
+    if (button.textContent.includes("Show Answer")) {
       button.textContent = "Hide Answer";
       answer.classList.remove("hide");
     } else {
