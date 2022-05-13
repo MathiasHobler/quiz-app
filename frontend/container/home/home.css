@@ -4,7 +4,7 @@
   padding: 1em;
   max-width: 20em;
   height: 25rem;
-  margin: 1em auto;
+  margin: 3.5em auto;
   position: relative;
   display: grid;
   grid-template-rows: 1fr 3fr 1fr 3fr 1fr;
@@ -21,22 +21,33 @@
   padding: 1em;
 }
 
-.question-card__anser {
+.question-card__answer {
   grid-row: 4;
   padding: 1em;
   align-self: center;
-  margin-top: 1em;
+  margin: 1em auto;
+}
+
+.hide {
+  display: none;
 }
 
 .question-card__bookmark {
   position: absolute;
   top: -15px;
   right: 15px;
+  width: 48px;
+  height: 48px;
+  fill: var(--medium);
+}
+
+.question-card__bookmark--filled {
+  opacity: 0.3;
 }
 
 .question-card__btn {
-  background-color: var(--dark);
-  color: var(--text-light);
+  background-color: var(--highlight-color);
+  color: var(--text-dark);
   border: none;
   margin: 0.5em 1em;
   border-radius: 18px;
@@ -47,8 +58,8 @@
 }
 
 .question-card__btn:hover {
-  background-color: var(--highlight-color);
-  color: var(--text-dark);
+  background-color: var(--dark);
+  color: var(--text-light);
 }
 
 .question-card__tags-container {
