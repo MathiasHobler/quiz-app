@@ -1,11 +1,11 @@
-@import "./container/navbar/navbar.css";
-@import "./container/header/header.css";
-@import "./container/question/question.css";
-@import "./container/create/create.css";
-@import "./container/quiz-app/quiz-app.css";
-@import "./container/bookmarks/bookmarks.css";
-@import "./container/home/home.css";
-@import "./container/profile/profile.css";
+@import "./container/css/navbar.css";
+@import "./container/css/header.css";
+@import "./container/css/question.css";
+@import "./container/css/create.css";
+@import "./container/css/quiz-app.css";
+@import "./container/css/bookmarks.css";
+@import "./container/css/home.css";
+@import "./container/css/profile.css";
 
 * {
   box-sizing: border-box;
