@@ -9,10 +9,6 @@
   align-items: center;
 }
 
-.navbar--hide {
-  display: none;
-}
-
 .navbar__link {
   fill: var(--text-light);
   text-decoration: none;

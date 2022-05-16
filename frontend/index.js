@@ -4,7 +4,7 @@ import toggleBookmark from "./container/js/bookmarks.js";
 import switchSides from "./container/js/navbar.js";
 
 //quiz-app---------------------------------------------------------------------------------------------------------------------------------
-const quizApp = document.querySelector(".quiz-app");
+const quizApp = document.querySelector(".start-screen");
 startQuizApp(quizApp);
 
 //question-cards---------------------------------------------------------------------------------------------------------------------------------
