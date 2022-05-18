@@ -2,6 +2,7 @@ import startQuizApp from "./container/js/quizapp.js";
 import showHideAnswer from "./container/js/questions.js";
 import toggleBookmark from "./container/js/bookmarks.js";
 import switchSides from "./container/js/navbar.js";
+import countCharacters from "./container/js/create.js";
 
 //quiz-app---------------------------------------------------------------------------------------------------------------------------------
 const quizApp = document.querySelector(".start-screen");
@@ -21,11 +22,13 @@ switchSides(navbar);
 
 //count values of input fields --------------------------------------------------------------
 const inputs = document.querySelectorAll("input");
+// inputs.forEach(countCharacters);
+
 const logs = document.querySelectorAll(".log-value");
 
 inputs.forEach(function (value, index) {
   value.addEventListener("input", () => {
-    var x = value.textLength;
+    const x = value.textLength;
     logs[index].innerHTML = x;
   });
 });
