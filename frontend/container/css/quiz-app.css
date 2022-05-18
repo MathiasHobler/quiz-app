@@ -1,4 +1,4 @@
-.quiz-app {
+.start-screen {
   color: var(--text-light);
   background-color: var(--dark);
   display: flex;
@@ -9,11 +9,7 @@
   padding: 1em;
 }
 
-.quiz-app--hide {
-  display: none;
-}
-
-.quiz-app__link {
+.start-screen__link {
   color: var(--text-light);
   text-decoration: none;
   justify-self: center;
@@ -21,6 +17,6 @@
   padding: 14px 16px;
 }
 
-.quiz-app__link:hover {
+.start-screen__link:hover {
   color: var(--text-dark);
 }

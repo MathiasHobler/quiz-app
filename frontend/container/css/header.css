@@ -14,10 +14,6 @@
   text-transform: uppercase;
 }
 
-.header--hide {
-  display: none;
-}
-
 .header__headline {
   font-size: 1.5rem;
 }
